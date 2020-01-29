@@ -3,13 +3,14 @@ package noobanidus.mods.chthonic;
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
-import noobanidus.mods.chthonic.client.hud.ManageHUD;
 import noobanidus.mods.chthonic.config.ConfigManager;
 import noobanidus.mods.chthonic.init.*;
 import noobanidus.mods.chthonic.registrate.CustomRegistrate;
@@ -26,7 +27,7 @@ public class Chthonic {
   public static final ItemGroup ITEM_GROUP = new ItemGroup("chthonic") {
     @Override
     public ItemStack createIcon() {
-      return ItemStack.EMPTY;
+      return new ItemStack(Items.SKELETON_SKULL);
     }
   };
 
@@ -39,6 +40,7 @@ public class Chthonic {
 
     DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> {
       modBus.addListener(ClientSetup::init);
+      modBus.addListener(ClientSetup::modelBake);
     });
 
     REGISTRATE = CustomRegistrate.create(MODID);

@@ -84,7 +84,7 @@ minecraft {
             }
 
             args '--mod', 'chthonic', '--all', '--output', '"' + rootProject.file('src/generated/resources/') + '"',
-                    '--existing', '"' + rootProject.file('src/main/resources') + '"'//, '--existing', '"' + rootProject.file('src/generated/resources') + '"'
+                    '--existing', '"' + rootProject.file('src/main/resources') + '"', '--existing', '"' + rootProject.file('src/generated/resources') + '"'
 
         }
     }
