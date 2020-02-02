@@ -1,0 +1,43 @@
+graph G {
+    node [nodesep=3.0, splines=true, style=filled]
+    graph [overlap=false, splines=true, nodesep=3.0]
+    edge [len=10.0]
+
+    node [shape=square]
+    Linguistics []
+    History []
+    Science []
+    Theology []
+
+    node [shape=oval]
+    History -> Alternate_History
+    History -> Folklore
+    History -> Mythology
+    History -> Archaeology
+    
+    Linguistics -> Common
+    Linguistics -> Aklo
+    Linguistics -> Fucine
+    Linguistics -> Phrygian
+    Linguistics -> Enochian
+    Linguistics -> Vak
+    Linguistics -> Deep_Mandaic
+    Linguistics -> Voynich
+    Linguistics -> Avestan
+
+    Science -> Alchemy
+    Science -> Chemistry
+    Science -> Geography
+    Science -> Chirography
+    Science -> Cryptozoology
+    Science -> Pharmacology
+    Science -> Botany
+    Science -> Mathematics
+    Science -> Astrology
+    
+    Theology -> Folklore
+    Theology -> Religion
+    Theology -> Mythology
+    Theology -> Cosmology
+    Theology -> Parapsychology
+}

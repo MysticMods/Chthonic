@@ -1,0 +1,158 @@
+digraph G {
+    node [nodesep=1.5, splines=true, style=filled]
+    graph [overlap=false, splines=true, nodesep=1.5]
+    edge [len=5.0]
+
+    node [shape=square]
+    Magic []
+    Sanity []
+    Spells []
+    Deities []
+    Astrology []
+    Minesign []
+    Shade_Magic []
+    Dragon_Magic []
+    Soul_Magic []
+    Zombie_Magic []
+    Deities []
+    Alchemy []
+    Artifice []
+    Pale []
+    Dreams []
+    Dreamland []
+
+    node [shape=egg]
+    Souls []
+    Shades []
+    Horoscopes []
+
+    node [shape=octagon]
+    Dragonfire_Forge []
+    Orichalcum_Purifier []
+    Soul_Harness []
+    Morphine []
+    Nepenthe []
+    Poppies []
+    Coca_Bush []
+    Opium []
+    Cocaine []
+    Villager_Corpses []
+    Zombies []
+    Saltes []
+    Enchantment_Dust []
+    Generator []
+
+    node [shape=trapezium]
+    Zombie_Furnace []
+    Zombie_Grindstone []
+    Zombie_Crafting_Table []
+    Zombie_Farm []
+    Loot_Generator []
+    Disenchanter []
+    Ore_Generator []
+    Over_Enchanter [] 
+
+    node [shape=Msquare]
+    Zugs []
+    Googs []
+    Cats []
+    Night_Ghasts []
+
+    node [shape=oval]
+    Magic -> Sanity
+    Magic -> Minesign
+    Magic -> Shade_Magic
+    Magic -> Dragon_Magic
+    Shade_Magic -> Soul_Magic
+    Soul_Magic -> Zombie_Magic
+
+    Alchemy -> Poppies -> Opium -> Morphine
+    Opium -> Nepenthe
+    Alchemy -> Coca_Bush -> Cocaine
+
+    Shade_Magic -> Saltes -> Shades
+    Soul_Magic -> Soul_Catcher -> Gems -> Souls
+    Soul_Magic -> Soul_Harness
+    Soul_Magic -> Villager_Portal
+    Artifice -> Orichalcum_Purifier
+    Artifice -> Lead_Tongues_In_Jars
+    Artifice -> Generator
+    Artifice -> Telescope
+    Telescope -> Horoscopes
+
+    Zombies -> Zombie_Furnace
+    Zombies -> Zombie_Grindstone
+    Zombies -> Zombie_Crafting_Table
+    Zombies -> Zombie_Farm
+    Zombie_Magic -> Villager_Corpses
+    Souls -> Villager_Corpses
+    Villager_Corpses -> Zombies
+
+    Deities -> Nyaarlahotep -> Oath_of_Nyaarlahotep
+    Deities -> Dagon -> Oaths_of_Dagon
+
+    Rituals -> Salt
+    Rituals -> Ash
+    Rituals -> Teleportation
+
+    Dragon_Magic -> Ritual_of_Incubation
+    Alchemy -> Dragonfire_Forge -> Enchantment_Dust
+    Artifice -> Dragonfire_Forge
+    Dragon_Magic -> Dragonfire_Forge
+    Rituals -> Ritual_of_Incubation
+
+    Enchantment_Dust -> Loot_Generator
+    Enchantment_Dust -> Disenchanter
+    Enchantment_Dust -> Ore_Generator
+    Enchantment_Dust -> Over_Enchanter
+
+    Sanity -> Spells
+
+    Spells -> Mesmerism
+    Spells -> Transmutation
+    Spells -> Aura_of_Mortality
+    Spells -> Mephitic_Touch
+    Spells -> Greater_Aura_of_Mortality
+    Spells -> Polymorph_Frog
+    Spells -> Gravity_Reversal
+    Spells -> Dart
+    Spells -> Dimensional_Pocket
+    Spells -> False_Life
+    Spells -> False_Death
+    Spells -> Dart_Storm
+    Spells -> Repel_Missiles
+    Spells -> Harm
+    Spells -> Greater_Harm
+    Spells -> Descent
+    Spells -> Bore
+    Spells -> Jacobs_Ladder
+
+    Astrology -> Constellations
+    Astrology -> Stars
+    Astrology -> Horoscopes
+
+    Stars -> Polaris
+    Stars -> Aldebaran
+    Stars -> Algol
+
+    Opium -> Dreams
+    Dreams -> Dreamland
+    Dreamland -> Zugs
+    Dreamland -> Googs
+    Dreamland -> Night_Ghasts
+    Dreamland -> Cats
+
+    node [shape=house]
+    Minesign -> Long_Dark
+    Minesign -> Following_Dark
+    Minesign -> Closing_Dark
+    Minesign -> Opening_Dark
+    Minesign -> Calling_Dark
+    Minesign -> Waiting_Dark
+    Minesign -> Breathing_Dark
+    Minesign -> Speaking_Dark
+    Minesign -> Catching_Dark
+    Minesign -> Secret_Dark
+    Minesign -> Guarding_Dark
+    Minesign -> Summoning_Dark
+}

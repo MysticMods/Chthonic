@@ -1,0 +1,45 @@
+digraph G {
+    /*node [nodesep=3.0, splines=true, style=filled]
+    graph [overlap=false, splines=true, nodesep=3.0]
+    edge [len=10.0]*/
+
+    node [shape=doubleoctagon,bgcolor=aquamarine]
+    Mobility []
+    Battle []
+    Mining []
+    Underwater []
+    Hunger []
+
+    node [shape=egg,bgcolor=tan]
+    Battle -> Harm []
+    Battle -> Greater_Harm []
+    Battle -> Dart []
+    Battle -> Dart_Swarm []
+    Battle -> Terrify []
+    Battle -> Barrier []
+    Battle -> Shield []
+    Battle -> Dark_Exchange []
+
+    Underwater -> Unending_Breath []
+    Underwater -> Clarity []
+    Underwater -> Affinity []
+    
+    Hunger -> Feast_of_Souls []
+
+    Mobility -> Jaunt []
+    Mobility -> Greater_Jaunt []
+
+    Mining -> Haste []
+    Mining -> Meld_with_Steel []
+    Mining -> Radiant_Swarm []
+    Mining -> Affinity []
+
+    node [shape=oval,bgcolor=white]
+    Spells -> Mobility
+    Spells -> Battle
+    Spells -> Mining
+    Spells -> Underwater
+    Spells -> Hunger
+
+    Sanity -> Spells
+}

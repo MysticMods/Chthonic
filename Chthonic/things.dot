@@ -1,0 +1,22 @@
+digraph G {
+    node [nodesep=1, splines=true, style=filled]
+    graph [overlap=false, splines=true, nodesep=1]
+    edge [len=2.0]
+
+    World [shape=circle]
+    Loot_Chest1 [shape=trapezium]
+    Loot_Chest2 [shape=trapezium]
+    Player1 [shape=house]
+    Player2 [shape=house]
+    Loot1_Player1_Inv [shape=egg]
+    Loot1_Player2_Inv [shape=egg]   
+    Loot2_Player1_Inv [shape=egg]
+    Loot2_Player2_Inv [shape=egg]
+
+    World -> Loot_Chest1
+    World -> Loot_Chest2
+    Loot_Chest1 -> Player1 -> Loot1_Player1_Inv
+    Loot_Chest1 -> Player2 -> Loot1_Player2_Inv
+    Loot_Chest2 -> Player1 -> Loot2_Player1_Inv
+    Loot_Chest2 -> Player2 -> Loot2_Player2_Inv
+}
