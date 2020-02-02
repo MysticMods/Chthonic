@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "chthonic:block/omni_temp23"
+    },
+    "facing=up": {
+      "model": "chthonic:block/omni_temp23"
+    },
+    "facing=north": {
+      "model": "chthonic:block/omni_temp23"
+    },
+    "facing=south": {
+      "model": "chthonic:block/omni_temp23"
+    },
+    "facing=west": {
+      "model": "chthonic:block/omni_temp23"
+    },
+    "facing=east": {
+      "model": "chthonic:block/omni_temp23"
+    }
+  }
+}

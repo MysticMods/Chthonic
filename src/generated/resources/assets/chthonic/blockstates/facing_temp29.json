@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chthonic:block/facing_temp29"
+    },
+    "facing=south": {
+      "model": "chthonic:block/facing_temp29",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chthonic:block/facing_temp29",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "chthonic:block/facing_temp29",
+      "y": 90
+    }
+  }
+}
