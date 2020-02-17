@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chthonic:block/skeletontop3"
+    },
+    "facing=south": {
+      "model": "chthonic:block/skeletontop3",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chthonic:block/skeletontop3",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "chthonic:block/skeletontop3",
+      "y": 90
+    }
+  }
+}

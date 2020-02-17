@@ -103,6 +103,13 @@
   "block.chthonic.omni_temp7": "\u3125d\u026F\u01DD\u27D8 \u0131u\u026FO",
   "block.chthonic.omni_temp8": "8d\u026F\u01DD\u27D8 \u0131u\u026FO",
   "block.chthonic.omni_temp9": "6d\u026F\u01DD\u27D8 \u0131u\u026FO",
+  "block.chthonic.skeleton_low1": "su\u0131\u0250\u026F\u01DD\u1D1A \u05DF\u0250\u0287\u01DD\u05DF\u01DD\u029ES",
+  "block.chthonic.skeleton_low2": "su\u0131\u0250\u026F\u01DD\u1D1A \u05DF\u0250\u0287\u01DD\u05DF\u01DD\u029ES",
+  "block.chthonic.skeleton_low3": "su\u0131\u0250\u026F\u01DD\u1D1A \u05DF\u0250\u0287\u01DD\u05DF\u01DD\u029ES",
+  "block.chthonic.skeleton_top1": "su\u0131\u0250\u026F\u01DD\u1D1A \u05DF\u0250\u0287\u01DD\u05DF\u01DD\u029ES",
+  "block.chthonic.skeleton_top2": "su\u0131\u0250\u026F\u01DD\u1D1A \u05DF\u0250\u0287\u01DD\u05DF\u01DD\u029ES",
+  "block.chthonic.skeleton_top3": "su\u0131\u0250\u026F\u01DD\u1D1A \u05DF\u0250\u0287\u01DD\u05DF\u01DD\u029ES",
+  "block.chthonic.skeleton_top4": "su\u0131\u0250\u026F\u01DD\u1D1A \u05DF\u0250\u0287\u01DD\u05DF\u01DD\u029ES",
   "block.chthonic.telescope": "\u01DDdo\u0254s\u01DD\u05DF\u01DD\u27D8",
   "itemGroup.chthonic": "\u0254\u0131uo\u0265\u0287\u0265\u0186"
 }

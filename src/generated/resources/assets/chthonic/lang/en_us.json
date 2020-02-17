@@ -103,6 +103,13 @@
   "block.chthonic.omni_temp7": "Omni Temp7",
   "block.chthonic.omni_temp8": "Omni Temp8",
   "block.chthonic.omni_temp9": "Omni Temp9",
+  "block.chthonic.skeleton_low1": "Skeletal Remains",
+  "block.chthonic.skeleton_low2": "Skeletal Remains",
+  "block.chthonic.skeleton_low3": "Skeletal Remains",
+  "block.chthonic.skeleton_top1": "Skeletal Remains",
+  "block.chthonic.skeleton_top2": "Skeletal Remains",
+  "block.chthonic.skeleton_top3": "Skeletal Remains",
+  "block.chthonic.skeleton_top4": "Skeletal Remains",
   "block.chthonic.telescope": "Telescope",
   "itemGroup.chthonic": "Chthonic"
 }

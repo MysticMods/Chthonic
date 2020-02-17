@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chthonic:block/bonepile4"
+    },
+    "facing=south": {
+      "model": "chthonic:block/bonepile4",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chthonic:block/bonepile4",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "chthonic:block/bonepile4",
+      "y": 90
+    }
+  }
+}
