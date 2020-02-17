@@ -29,77 +29,99 @@ public class ModBlocks {
         .modelFile(p.getExistingFile(new ResourceLocation(Chthonic.MODID, "block/bonepile1")))
         .rotationY(((int) state.get(BlockStateProperties.HORIZONTAL_FACING).getHorizontalAngle() + 180) % 360)
         .build());
-  }).register();
+  }).item().model((ctx, p) -> {
+    p.withExistingParent("bone_pile1", new ResourceLocation(Chthonic.MODID, "block/bonepile1"));
+  }).build().register();
 
   public static RegistryEntry<BonePileBlock> BONE_PILE_2 = REGISTRATE.block("bone_pile2", (b) -> new BonePileBlock(b, BonePileBlock.PileType.PILE2)).properties(BONE_PROPS).lang("Bone Pile").blockstate((ctx, p) -> {
     p.getVariantBuilder(ctx.getEntry()).forAllStates(state -> ConfiguredModel.builder()
         .modelFile(p.getExistingFile(new ResourceLocation(Chthonic.MODID, "block/bonepile2")))
         .rotationY(((int) state.get(BlockStateProperties.HORIZONTAL_FACING).getHorizontalAngle() + 180) % 360)
         .build());
-  }).register();
+  }).item().model((ctx, p) -> {
+    p.withExistingParent("bone_pile2", new ResourceLocation(Chthonic.MODID, "block/bonepile2"));
+  }).build().register();
 
   public static RegistryEntry<BonePileBlock> BONE_PILE_3 = REGISTRATE.block("bone_pile3", (b) -> new BonePileBlock(b, BonePileBlock.PileType.PILE3)).properties(BONE_PROPS).lang("Bone Pile").blockstate((ctx, p) -> {
     p.getVariantBuilder(ctx.getEntry()).forAllStates(state -> ConfiguredModel.builder()
         .modelFile(p.getExistingFile(new ResourceLocation(Chthonic.MODID, "block/bonepile3")))
         .rotationY(((int) state.get(BlockStateProperties.HORIZONTAL_FACING).getHorizontalAngle() + 180) % 360)
         .build());
-  }).register();
+  }).item().model((ctx, p) -> {
+    p.withExistingParent("bone_pile3", new ResourceLocation(Chthonic.MODID, "block/bonepile3"));
+  }).build().register();
 
   public static RegistryEntry<BonePileBlock> BONE_PILE_4 = REGISTRATE.block("bone_pile4", (b) -> new BonePileBlock(b, BonePileBlock.PileType.PILE4)).properties(BONE_PROPS).lang("Bone Pile").blockstate((ctx, p) -> {
     p.getVariantBuilder(ctx.getEntry()).forAllStates(state -> ConfiguredModel.builder()
         .modelFile(p.getExistingFile(new ResourceLocation(Chthonic.MODID, "block/bonepile4")))
         .rotationY(((int) state.get(BlockStateProperties.HORIZONTAL_FACING).getHorizontalAngle() + 180) % 360)
         .build());
-  }).register();
+  }).item().model((ctx, p) -> {
+    p.withExistingParent("bone_pile4", new ResourceLocation(Chthonic.MODID, "block/bonepile4"));
+  }).build().register();
 
   public static RegistryEntry<SkeletonBlock> SKELETON_LOW1 = REGISTRATE.block("skeleton_low1", (b) -> new SkeletonBlock(b, SkeletonBlock.SkeletonType.LOW1)).properties(BONE_PROPS).lang("Skeletal Remains").blockstate((ctx, p) -> {
     p.getVariantBuilder(ctx.getEntry()).forAllStates(state -> ConfiguredModel.builder()
         .modelFile(p.getExistingFile(new ResourceLocation(Chthonic.MODID, "block/skeletonlow")))
         .rotationY(((int) state.get(BlockStateProperties.HORIZONTAL_FACING).getHorizontalAngle() + 180) % 360)
         .build());
-  }).register();
+  }).item().model((ctx, p) -> {
+    p.withExistingParent("skeleton_low1", new ResourceLocation(Chthonic.MODID, "block/skeletonlow"));
+  }).build().register();
 
   public static RegistryEntry<SkeletonBlock> SKELETON_LOW2 = REGISTRATE.block("skeleton_low2", (b) -> new SkeletonBlock(b, SkeletonBlock.SkeletonType.LOW2)).properties(BONE_PROPS).lang("Skeletal Remains").blockstate((ctx, p) -> {
     p.getVariantBuilder(ctx.getEntry()).forAllStates(state -> ConfiguredModel.builder()
         .modelFile(p.getExistingFile(new ResourceLocation(Chthonic.MODID, "block/skeletonlow2")))
         .rotationY(((int) state.get(BlockStateProperties.HORIZONTAL_FACING).getHorizontalAngle() + 180) % 360)
         .build());
-  }).register();
+  }).item().model((ctx, p) -> {
+    p.withExistingParent("skeleton_low2", new ResourceLocation(Chthonic.MODID, "block/skeletonlow2"));
+  }).build().register();
 
   public static RegistryEntry<SkeletonBlock> SKELETON_LOW3 = REGISTRATE.block("skeleton_low3", (b) -> new SkeletonBlock(b, SkeletonBlock.SkeletonType.LOW3)).properties(BONE_PROPS).lang("Skeletal Remains").blockstate((ctx, p) -> {
     p.getVariantBuilder(ctx.getEntry()).forAllStates(state -> ConfiguredModel.builder()
         .modelFile(p.getExistingFile(new ResourceLocation(Chthonic.MODID, "block/skeletonlow3")))
         .rotationY(((int) state.get(BlockStateProperties.HORIZONTAL_FACING).getHorizontalAngle() + 180) % 360)
         .build());
-  }).register();
+  }).item().model((ctx, p) -> {
+    p.withExistingParent("skeleton_low3", new ResourceLocation(Chthonic.MODID, "block/skeletonlow3"));
+  }).build().register();
 
   public static RegistryEntry<SkeletonBlock> SKELETON_TOP1 = REGISTRATE.block("skeleton_top1", (b) -> new SkeletonBlock(b, SkeletonBlock.SkeletonType.TOP1)).properties(BONE_PROPS).lang("Skeletal Remains").blockstate((ctx, p) -> {
     p.getVariantBuilder(ctx.getEntry()).forAllStates(state -> ConfiguredModel.builder()
         .modelFile(p.getExistingFile(new ResourceLocation(Chthonic.MODID, "block/skeletontop")))
         .rotationY(((int) state.get(BlockStateProperties.HORIZONTAL_FACING).getHorizontalAngle() + 180) % 360)
         .build());
-  }).register();
+  }).item().model((ctx, p) -> {
+    p.withExistingParent("skeleton_top1", new ResourceLocation(Chthonic.MODID, "block/skeletontop"));
+  }).build().register();
 
   public static RegistryEntry<SkeletonBlock> SKELETON_TOP2 = REGISTRATE.block("skeleton_top2", (b) -> new SkeletonBlock(b, SkeletonBlock.SkeletonType.TOP2)).properties(BONE_PROPS).lang("Skeletal Remains").blockstate((ctx, p) -> {
     p.getVariantBuilder(ctx.getEntry()).forAllStates(state -> ConfiguredModel.builder()
         .modelFile(p.getExistingFile(new ResourceLocation(Chthonic.MODID, "block/skeletontop2")))
         .rotationY(((int) state.get(BlockStateProperties.HORIZONTAL_FACING).getHorizontalAngle() + 180) % 360)
         .build());
-  }).register();
+  }).item().model((ctx, p) -> {
+    p.withExistingParent("skeleton_top2", new ResourceLocation(Chthonic.MODID, "block/skeletontop2"));
+  }).build().register();
 
   public static RegistryEntry<SkeletonBlock> SKELETON_TOP3 = REGISTRATE.block("skeleton_top3", (b) -> new SkeletonBlock(b, SkeletonBlock.SkeletonType.TOP3)).properties(BONE_PROPS).lang("Skeletal Remains").blockstate((ctx, p) -> {
     p.getVariantBuilder(ctx.getEntry()).forAllStates(state -> ConfiguredModel.builder()
         .modelFile(p.getExistingFile(new ResourceLocation(Chthonic.MODID, "block/skeletontop3")))
         .rotationY(((int) state.get(BlockStateProperties.HORIZONTAL_FACING).getHorizontalAngle() + 180) % 360)
         .build());
-  }).register();
+  }).item().model((ctx, p) -> {
+    p.withExistingParent("skeleton_top3", new ResourceLocation(Chthonic.MODID, "block/skeletontop3"));
+  }).build().register();
 
   public static RegistryEntry<SkeletonBlock> SKELETON_TOP4 = REGISTRATE.block("skeleton_top4", (b) -> new SkeletonBlock(b, SkeletonBlock.SkeletonType.TOP4)).properties(BONE_PROPS).lang("Skeletal Remains").blockstate((ctx, p) -> {
     p.getVariantBuilder(ctx.getEntry()).forAllStates(state -> ConfiguredModel.builder()
         .modelFile(p.getExistingFile(new ResourceLocation(Chthonic.MODID, "block/skeletontop4")))
         .rotationY(((int) state.get(BlockStateProperties.HORIZONTAL_FACING).getHorizontalAngle() + 180) % 360)
         .build());
-  }).register();
+  }).item().model((ctx, p) -> {
+    p.withExistingParent("skeleton_top4", new ResourceLocation(Chthonic.MODID, "block/skeletontop4"));
+  }).build().register();
 
   public static RegistryEntry<TelescopeBlock> TELESCOPE = REGISTRATE.block("telescope", TelescopeBlock::new).properties(STONE_PROPS).blockstate((ctx, p) -> {
   }).item().model((ctx, p) -> {
