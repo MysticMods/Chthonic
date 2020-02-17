@@ -12,7 +12,7 @@ digraph G {
 
     node [shape=egg,bgcolor=tan]
     Battle -> Harm []
-    Battle -> Greater_Harm []
+    Battle -> Mass_Harm []
     Battle -> Dart []
     Battle -> Dart_Swarm []
     Battle -> Terrify []
@@ -23,6 +23,8 @@ digraph G {
     Underwater -> Unending_Breath []
     Underwater -> Clarity []
     Underwater -> Affinity []
+    Underwater -> Water_Walking []
+    Underwater -> Depth_Striding []
     
     Hunger -> Feast_of_Souls []
 
@@ -33,6 +35,8 @@ digraph G {
     Mining -> Meld_with_Steel []
     Mining -> Radiant_Swarm []
     Mining -> Affinity []
+    Mining -> Sense_Caves []
+    Mining -> Sense_Ore []
 
     node [shape=oval,bgcolor=white]
     Spells -> Mobility
