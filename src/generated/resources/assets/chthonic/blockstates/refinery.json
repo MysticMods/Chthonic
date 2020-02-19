@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chthonic:block/refinery"
+    },
+    "facing=south": {
+      "model": "chthonic:block/refinery",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chthonic:block/refinery",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "chthonic:block/refinery",
+      "y": 90
+    }
+  }
+}

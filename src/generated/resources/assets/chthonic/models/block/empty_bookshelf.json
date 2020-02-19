@@ -1,0 +1,7 @@
+{
+  "parent": "block/bookshelf",
+  "textures": {
+    "end": "block/dark_oak_planks",
+    "side": "chthonic:block/bookshelf_empty"
+  }
+}

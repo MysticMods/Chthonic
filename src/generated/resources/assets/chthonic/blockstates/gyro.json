@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chthonic:block/gyro"
+    },
+    "facing=south": {
+      "model": "chthonic:block/gyro",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chthonic:block/gyro",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "chthonic:block/gyro",
+      "y": 90
+    }
+  }
+}

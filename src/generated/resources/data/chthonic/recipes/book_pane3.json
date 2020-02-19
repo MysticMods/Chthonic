@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBW",
+    "BWB",
+    "WBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "W": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "chthonic:book_pane3",
+    "count": 4
+  }
+}

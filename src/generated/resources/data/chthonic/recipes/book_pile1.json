@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B ",
+    "BB",
+    "BB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    }
+  },
+  "result": {
+    "item": "chthonic:book_pile1",
+    "count": 5
+  }
+}

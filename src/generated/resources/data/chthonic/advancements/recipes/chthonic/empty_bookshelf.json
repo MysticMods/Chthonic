@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "chthonic:empty_bookshelf"
+    ]
+  },
+  "criteria": {
+    "has_dark_oak": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dark_oak_planks"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "chthonic:empty_bookshelf"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_dark_oak",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chthonic:block/altar"
+    },
+    "facing=south": {
+      "model": "chthonic:block/altar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chthonic:block/altar",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "chthonic:block/altar",
+      "y": 90
+    }
+  }
+}

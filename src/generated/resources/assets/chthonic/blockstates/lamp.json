@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chthonic:block/lamp"
+    },
+    "facing=south": {
+      "model": "chthonic:block/lamp",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chthonic:block/lamp",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "chthonic:block/lamp",
+      "y": 90
+    }
+  }
+}
