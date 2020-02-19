@@ -45,14 +45,11 @@ public class ClientSetup {
   public static void modelBake(ModelBakeEvent event) {
     Map<ResourceLocation, IBakedModel> registry = event.getModelRegistry();
     for (ResourceLocation ml : MODELS) {
-      IBakedModel baked = registry.get(new ModelResourceLocation(ml, ""));
+      IBakedModel baked = registry.get(new ModelResourceLocation(ml, "facing=north"));
       if (baked != null) {
         IBakedModel inventory = new PerspectiveMapWrapper(baked, BLOCK_TRANSFORMS);
         registry.put(new ModelResourceLocation(ml, "inventory"), inventory);
       }
     }
-    IBakedModel baked = registry.get(new ModelResourceLocation(new ResourceLocation(Chthonic.MODID, "quartz_cluster"), "facing=up"));
-    IBakedModel inventory = new PerspectiveMapWrapper(baked, BLOCK_TRANSFORMS);
-    registry.put(new ModelResourceLocation(new ResourceLocation(Chthonic.MODID, "quartz_cluster"), "inventory"), inventory);
   }
 }

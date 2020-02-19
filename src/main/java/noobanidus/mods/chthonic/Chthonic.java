@@ -41,10 +41,12 @@ public class Chthonic {
     DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> {
       modBus.addListener(ClientSetup::init);
       modBus.addListener(ClientSetup::modelBake);
+      modBus.addListener(ModParticles::registerParticles);
     });
 
     REGISTRATE = CustomRegistrate.create(MODID);
     REGISTRATE.itemGroup(NonNullSupplier.of(() -> ITEM_GROUP));
+    ModParticles.particleRegistry.register(modBus);
     ModItems.load();
     ModBlocks.load();
     ModTiles.load();
@@ -52,5 +54,7 @@ public class Chthonic {
     ModContainers.load();
     ModLang.load();
     ModTags.load();
+    ModFluids.load();
+    ModParticles.load();
   }
 }

@@ -13,28 +13,18 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
+import noobanidus.libs.noobutil.util.VoxelUtil;
 
-@SuppressWarnings("deprecation")
-public class SkeletonBlock extends HorizontalFacingBlock{
-  private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
+@SuppressWarnings({"NullableProblems", "deprecation"})
+public class PileBlock extends HorizontalFacingBlock {
+  private static VoxelShape SLIM_SLAB = Block.makeCuboidShape(1, 0, 1, 15, 8, 15);
 
-  private static VoxelShape NORTH = Block.makeCuboidShape(1, 0, 0, 15, 8, 16);
-  private static VoxelShape EAST = Block.makeCuboidShape(0, 0, 1, 16, 8, 15);
-
-  public SkeletonBlock(Properties properties) {
+  public PileBlock(Properties properties) {
     super(properties);
   }
 
   @Override
   public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
-    switch (state.get(FACING)) {
-      case EAST:
-      case WEST:
-        return EAST;
-      case NORTH:
-      case SOUTH:
-      default:
-        return NORTH;
-    }
+    return SLIM_SLAB;
   }
 }

@@ -15,7 +15,7 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 import noobanidus.libs.noobutil.util.VoxelUtil;
 
-@SuppressWarnings("NullableProblems")
+@SuppressWarnings({"NullableProblems", "deprecation"})
 public class BonePileBlock extends Block {
   private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 
@@ -23,7 +23,7 @@ public class BonePileBlock extends Block {
   private static VoxelShape BONE_PILE_EAST = VoxelUtil.rotate(BONE_PILE_NORTH, Rotation.CLOCKWISE_90);
   private static VoxelShape BONE_PILE_SOUTH = VoxelUtil.rotate(BONE_PILE_EAST, Rotation.CLOCKWISE_90);
   private static VoxelShape BONE_PILE_WEST = VoxelUtil.rotate(BONE_PILE_SOUTH, Rotation.CLOCKWISE_90);
-  private static VoxelShape SLIM_SLAB = Block.makeCuboidShape(1, 0, 1,15, 4, 15);
+  private static VoxelShape SLIM_SLAB = Block.makeCuboidShape(1, 0, 1, 15, 6, 15);
 
   private PileType type;
 
